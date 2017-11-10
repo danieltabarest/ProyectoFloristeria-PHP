@@ -1,0 +1,54 @@
+/* 
+    Document   : Zoom
+    Created on : 30-may-2012, 0:59:53
+    Author     : Victor
+    Description:
+    Estilo de efecto Zoom sobre imagenes..
+*/
+
+.imagen-zoom{ 
+position: relative; 
+z-index: 0; 
+} 
+.imagen-zoom:hover { 
+z-index: 60; 
+background-color: transparent; 
+} 
+
+.imagen-zoom img{ 
+border:1px solid #c0c0c0;
+padding:5px;
+} 
+
+.imagen-zoom span{ 
+-moz-transition: 0.5s; 
+-webkit-transition: 0.5s;
+-o-transition:0.5s;
+transition: 0.5s;
+position: absolute; 
+visibility: hidden; 
+background-color: #fff; 
+padding: 5px; 
+left: -80px; 
+bottom: -80px;
+border: 1px solid #969696; 
+color: #2d2d2d; 
+font-size:18px;
+font-weight:normal;
+font-family: Arial, Helvetica, sans-serif; 
+opacity:0;
+text-align:center;
+} 
+
+.imagen-zoom span img{ 
+border:1px solid #c0c0c0; 
+padding: 5px; 
+max-width:400px;
+max-height:auto;
+} 
+.imagen-zoom:hover span { 
+visibility: visible; 
+opacity:1;
+bottom: 30px;
+}
+fieldset h3{ margin: 1.5em -28px; padding: 14px 28px; line-height: 1; background: #efefef; color: #343434; }
